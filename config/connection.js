@@ -5,6 +5,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/SNapi', {
     useUnifiedTopology: true,
 });
 
-if (1 === 1)
-
 module.exports = mongoose.connection;
