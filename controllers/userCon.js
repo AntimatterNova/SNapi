@@ -71,7 +71,7 @@ const UserController =  {
                 const kicked = !dbUserData.friends.includes(params.friendId);
                 
                 if(kicked) {
-                    res.json({ message: "Friend Kicked Out of Your List", dbUserData });
+                    res.json({ message: "User removed from Your friend list", dbUserData });
                 } else {
                     res.json(dbUserData);
                 }
